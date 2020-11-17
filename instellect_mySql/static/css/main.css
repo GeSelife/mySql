@@ -1,0 +1,179 @@
+a{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+/*左边pro*/
+.pro{
+    width: 220px;
+    height: 100vh;
+    background-color: #20222A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: hidden;
+}
+.pro .pro_lists ul .pro_listsOne dl{
+    display: none;
+}
+.pro .pro_lists{
+    width: 240px;
+    overflow-y: scroll;
+    height: 100vh;
+    top: 0;
+    z-index: 1001;
+    box-sizing: border-box;
+}
+.pro_listsTitle{
+    text-align: center;
+    padding: 8px 30px 8px 45px;
+    display: block;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 34px;
+    color: rgba(255,255,255,.8);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+.pro_listsTitle:hover{
+    color: rgba(255,255,255,.8);
+}
+.pro .pro_lists ul .pro_listsOne{
+    width: 100%;
+    line-height: 40px;
+    position: relative;
+}
+.pro .pro_lists ul .pro_listsOne .listsA{
+    display: block;
+    height: 56px;
+    padding: 8px 30px 8px 45px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    position: relative;
+}
+.pro .pro_lists ul .pro_listsOne dl dd{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 45px;
+    padding-right: 30px;
+    cursor: pointer;
+    color:rgba(255,255,255,.7);
+    font-size: 14px;
+}
+.pro .pro_lists ul .pro_listsOne dl dd:hover{
+    color: #fff;
+}
+.pro .pro_lists ul .pro_listsOne::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 56px;
+    background: #009688;
+    opacity: 0;
+    transform: scale(0,0);
+    transform-origin: center;
+    transition: opacity 0.4s linear,transform 0.4s linear;
+}
+.pro .pro_lists ul .pro_listsOne .listsA::after{
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    width: 0;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-top:6px solid #fff;
+}
+.pro .pro_lists ul .pro_listsOne:hover .listsA{
+    color: #fff;
+}
+.pro .pro_lists ul .pro_listsOne:hover::before{
+    opacity: 1;
+    transform: scale(1,1);
+}
+.pro .pro_lists ul .pro_listsOne .listsA i.iconfont{
+    font-size: 14px;
+    margin-left: -19px;
+    margin-right: 10px;
+}
+
+/*内容content*/
+.content{
+    position: relative;
+    top: 0;
+    padding-left: 240px;
+    box-sizing: border-box;
+    z-index: 1;
+    height: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    background: #fff;
+}
+.content div{
+    width: 100%;
+    height: 50px;
+}
+.content div ul{
+    height: 50px;
+}
+.content div ul li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+.content div ul li::before{
+    content: '';
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 0;left: 0;
+    transition: width 0.2s linear;
+    width: 0;
+}
+.content div ul li:hover::before{
+    width: 100%;
+}
+.content div ul:nth-of-type(1){
+    float: left;
+}
+.content div ul:nth-of-type(1) li input{
+    outline: none;
+    font-size: 14px;
+    color: #000;
+}
+.content div ul:nth-of-type(1) li input-placeholder{
+    color: #e6e6e6;
+}
+.content div ul:nth-of-type(2){
+    float: right;
+}
+.content div ul:nth-of-type(2) li{
+    font-size: 14px;
+}
+.lists-last input{
+    height: 30px;
+    border: 1px solid transparent;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 30px 8px 45px;
+    box-sizing: border-box;
+}
+main iframe{
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+}
